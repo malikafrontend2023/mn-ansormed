@@ -5,13 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnsorMed</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <!-- SITE-HEADER -->
   <header class="site-header">
-    <div class="container">
+    <div class="site-header-container container">
       <a href="index.html">
         <img src="/image/logo.svg" alt="AnsorMed logosi">
       </a>
@@ -19,7 +24,7 @@
       <!-- SITE-NAV -->
       <div class="site-header-actions">
         <nav>
-          <ul sitenav-list>
+          <ul class="sitenav-list">
             <li class="sitenav-item"><a class="sitenav-link" href="#">Xizmatlar</a></li>
             <li class="sitenav-item"><a class="sitenav-link" href="#">Dorliar</a></li>
             <li class="sitenav-item"><a class="sitenav-link" href="#">Asal</a></li>
@@ -27,7 +32,7 @@
             <li class="sitenav-item"><a class="sitenav-link" href="#">Blog</a></li>
           </ul>
         </nav>
-        <button class="main-link">Qabulga yozilish</button>
+        <button class="main-link">QABULGA YOZILISH</button>
       </div>
     </div>
   </header>
@@ -39,7 +44,7 @@
         <div class="hero-content">
           <h2 class="hero-heading">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
           <p>Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
-          <button class="main-link">Qabulga yozilish</button>
+          <button class="main-link">QABULGA YOZILISH</button>
         </div>
         <img class="hero-img" src="/image/hero-img.png" alt="Shifokor rasmi" width="423" height="504" srcset="/image/hero-img.png 1x, /image/hero-img@2x.png 2x">
       </div>
@@ -80,29 +85,33 @@
             <p class="servic-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
           </li>
         </ul>
-        <button class="main-link">Qabulga yozilish</button>
+        <button class="main-link">QABULGA YOZILISH</button>
       </div>
     </section>
   </main>
 
   <!-- SITE-FOOTER -->
   <footer class="site-footer">
-      <div class="container">
-        <div class="site-footer-top">
-          <h2 class="footer-heading">Qabulga ro’yxatdan o’ting</h2>
-          <div class="connections">
-            <button class="connection-item">Qo’ng’iroq qilish</button>
-            <button class="connection-item">Telegramdan yozish</button>
-          </div>
+    <div class="container">
+      <div class="site-footer-top">
+        <h2 class="footer-heading">Qabulga ro’yxatdan o’ting</h2>
+        <div class="connections">
+          <button class="connection-item">Qo’ng’iroq qilish</button>
+          <button class="connection-item">Telegramdan yozish</button>
         </div>
-        <div class="site-footer-bottom">
+      </div>
+    </div>
+  </footer>
+      <header class="footer-header site-header">
+        <div class="site-header-container container">
           <a href="index.html">
             <img src="/image/logo.svg" alt="AnsorMed logosi">
           </a>
-          <!-- SITENAV -->
+
+          <!-- SITE-NAV -->
           <div class="site-header-actions">
             <nav>
-              <ul sitenav-list>
+              <ul class="sitenav-list">
                 <li class="sitenav-item"><a class="sitenav-link" href="#">Xizmatlar</a></li>
                 <li class="sitenav-item"><a class="sitenav-link" href="#">Dorliar</a></li>
                 <li class="sitenav-item"><a class="sitenav-link" href="#">Asal</a></li>
@@ -110,10 +119,9 @@
                 <li class="sitenav-item"><a class="sitenav-link" href="#">Blog</a></li>
               </ul>
             </nav>
-            <button class="main-link">Qabulga yozilish</button>
+            <button class="main-link">QABULGA YOZILISH</button>
           </div>
         </div>
-      </div>
-  </footer>
+      </header>
 </body>
 </html>
