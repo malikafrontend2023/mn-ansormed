@@ -63,7 +63,7 @@ body {
   font-size: 24px;
   line-height: 33px;
   color: #222;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .header-logo-link:hover {
@@ -91,7 +91,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .sitenav-link:hover {
@@ -124,7 +124,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .main-link:hover {
@@ -306,7 +306,7 @@ body {
   color: #fff;
   margin: 0;
   margin-right: 40px;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .connection:last-child {
@@ -357,7 +357,7 @@ body {
   font-size: 24px;
   line-height: 33px;
   color: #fff;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .footer-logo-link:hover {
@@ -376,7 +376,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .sitenavfooter-link:hover {
