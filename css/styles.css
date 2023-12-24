@@ -17,8 +17,8 @@ body {
 }
 
 *:focus {
-  outline: 3px dotted #de2e54;
-  outline-offset: 3px;
+  outline: 2px dotted #de2e54;
+  outline-offset: 2px;
 }
 
 .container {
@@ -32,6 +32,8 @@ body {
 
 /* SITE-HEADER */
 .site-header {
+  position: relative;
+  z-index: 1;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -40,7 +42,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
 }
 
 .logo {
@@ -161,6 +162,11 @@ body {
   border-color: transparent;
   background-color: #de2e54;
   color: #fff;
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
 }
 
 /* HERO */
@@ -318,6 +324,71 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width:1100px) {
+  .site-header {
+    padding-bottom: 16px;
+  }
+
+  .site-header-logo {
+    margin-right: auto;
+  }
+
+  .site-header-main-link {
+    margin-right: 24px;
+  }
+
+  .site-header-toggle-button {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: #de2e54;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+  }
+
+  .site-header-toggle-button:hover {
+    color: #fff;
+    background-color: #de2e54;
+  }
+
+  .site-header-sitenav {
+    display: none;
+  }
+
+  .site-header-toggle-button {
+    display: block;
+  }
+
+  .site-header-open .site-header-sitenav {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+  }
+
+  .site-header-sitenav .sitenav-list {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .site-header-sitenav .sitenav-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .site-header-sitenav .sitenav-item{
+    padding-bottom: 3px;
+    border-bottom: 2px solid #de2e54;
+  }
+}
+
 
 @media only screen and (max-width:1000px) {
   .hero-content {
@@ -346,6 +417,10 @@ body {
 }
 
 @media only screen and (max-width:900px) {
+  .site-header .main-link {
+    display: none;
+  }
+
   .site-footer-container {
     flex-direction: column;
   }
@@ -413,6 +488,11 @@ body {
 }
 
 @media only screen and (max-width:550px) {
+  .container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
   .service {
     flex-direction: column;
     align-items: center;
