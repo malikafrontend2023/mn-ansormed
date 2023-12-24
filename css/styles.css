@@ -324,6 +324,23 @@ body {
   align-items: center;
 }
 
+.site-header-toggle-button {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: #de2e54;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.site-header-toggle-button:hover {
+  color: #fff;
+  background-color: #de2e54;
+}
+
 @media only screen and (max-width:1100px) {
   .site-header {
     padding-bottom: 16px;
@@ -335,23 +352,6 @@ body {
 
   .site-header-main-link {
     margin-right: 24px;
-  }
-
-  .site-header-toggle-button {
-    display: none;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    color: #de2e54;
-    border-radius: 4px;
-    transition: all 0.5s ease;
-  }
-
-  .site-header-toggle-button:hover {
-    color: #fff;
-    background-color: #de2e54;
   }
 
   .site-header-sitenav {
