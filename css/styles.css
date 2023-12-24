@@ -293,6 +293,7 @@ body {
 
 .connections {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -385,6 +386,10 @@ body {
     width: 150px;
     height: 150px;
   }
+
+  .cta-heading {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width:550px) {
@@ -416,5 +421,19 @@ body {
 
   .hero-img {
     width: 75%;
+  }
+
+  .connections {
+    flex-direction: column;
+  }
+
+  .cta {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .connection:not(:last-child) {
+    margin: 0;
+    margin-bottom: 24px;
   }
 }
